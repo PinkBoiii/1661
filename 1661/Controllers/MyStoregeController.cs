@@ -32,12 +32,6 @@ namespace _1661.Controllers
             return Json(new {data = modelMapping}, JsonRequestBehavior.AllowGet);
         }
 
-        public ActionResult Search(string keyword)// thuat toan tim kiem
-        {
-            var model = dbc.MyStoreges.Where(a => a.NameOfRP.Contains(keyword)).ToList();// linkq
-
-            return Json(new {data =model},JsonRequestBehavior.AllowGet);
-        }
         [HttpPost]
         public ActionResult AddOrUpdate(MyStorege model)
         {

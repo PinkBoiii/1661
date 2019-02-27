@@ -19,7 +19,7 @@ namespace _1661.App_Start
                 cfg.CreateMap<SubMyStorege,MyStorege>();
 
                
-
+                    
                 cfg.CreateMap<SF,SubSF>();
                 cfg.CreateMap<SubSF,SF>();
 
